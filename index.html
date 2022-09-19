@@ -10,21 +10,50 @@
 
 </head>
 <body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  <script src="js/index.js"></script>
+    <div class="wrapper container">
+        <div class="nav-container">
+            <div class="container">
+                <div class="nav-container__logo"></div>
+                <div class="nav-container__items-container">
+                    <div class="nav-container__items-features">
+                        <p class="nav-container__items-label nav-dropdown">Features</p>
+                        <ul class="nav-container__items-list">
+                            <li class="nav-container__items-list__item">Todo List</li>
+                            <li class="nav-container__items-list__item">Calendar</li>
+                            <li class="nav-container__items-list__item">Reminder</li>
+                            <li class="nav-container__items-list__item">Planning</li>
+                        </ul>
+                    </div>
+                    <div class="nav-container__items-company nav-dropdown">
+                        <p class="nav-container__items-label">Company</p>
+                        <ul class="nav-container__items-list">
+                            <li class="nav-container__items-list__item">History</li>
+                            <li class="nav-container__items-list__item">Our Team</li>
+                            <li class="nav-container__items-list__item">Blog</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-container__burger"><div class="burger-line"><div></div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="content-container__banner">
+                <img src="images/image-hero-mobile.png">                
+            </div>
+            <div class="content-container__text">
+                <h1 class="content-container__text-header">Make remote work</h1>
+                <p class="content-container__text-paragraph">Get your team in sync, no matter your location. Streamline processes, 
+                    create team rituals, and watch productivity soar.</p>                
+                <button class="content-container__text-button">Learn more</button>
+            </div>
+            <div class="content-container__clients">
+                <img src="images/client-databiz.svg" alt="databiz" class="content-container__clients-logo">
+                <img src="images/client-audiophile.svg" alt="audiophile" class="content-container__clients-logo">
+                <img src="images/client-meet.svg" alt="meet" class="content-container__clients-logo">
+                <img src="images/client-maker.svg" alt="maker" class="content-container__clients-logo">
+            </div>
+        </div>
+    </div>  
+    <script src="js/index.js"></script>
 </body>
 </html>
