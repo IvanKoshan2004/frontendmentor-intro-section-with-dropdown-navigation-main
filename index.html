@@ -10,35 +10,45 @@
 
 </head>
 <body>
-    <div class="wrapper container">
+    <div class="wrapper">
+        <div class="menu-view-blocker"></div>
         <div class="nav-container">
             <div class="container">
-                <div class="nav-container__logo"></div>
+                <div class="nav-container__logo"><img class="nav-container__logo-icon" src="images/logo.svg"></div>
                 <div class="nav-container__items-container">
-                    <div class="nav-container__items-features">
-                        <p class="nav-container__items-label nav-dropdown">Features</p>
-                        <ul class="nav-container__items-list">
-                            <li class="nav-container__items-list__item">Todo List</li>
-                            <li class="nav-container__items-list__item">Calendar</li>
-                            <li class="nav-container__items-list__item">Reminder</li>
-                            <li class="nav-container__items-list__item">Planning</li>
-                        </ul>
+                    <div class="nav-container__items-exit"><img class="nav-container__exit-icon" src="images/icon-close-menu.svg"></div>
+                        <div class="nav-container__items-links">
+                        <div class="nav-container__items-features nav-container__items-item">
+                            <p class="nav-container__items-label"><span class="line-under-strike-decoration">Features</span> <img class="nav-container__items-label-arrow" src="images/icon-arrow-down.svg"/></p>
+                            <ul class="nav-container__items-list  nav-dropdown">
+                                <li class="nav-container__items-list__item"><img src="images/icon-todo.svg" class="nav-container__items-list__item-icon"> <span class="line-under-strike-decoration">Todo List</span></li>
+                                <li class="nav-container__items-list__item"><img src="images/icon-calendar.svg" class="nav-container__items-list__item-icon"> <span class="line-under-strike-decoration">Calendar</span></li>
+                                <li class="nav-container__items-list__item"><img src="images/icon-reminders.svg" class="nav-container__items-list__item-icon"> <span class="line-under-strike-decoration">Reminder</span></li>
+                                <li class="nav-container__items-list__item"><img src="images/icon-planning.svg" class="nav-container__items-list__item-icon"> <span class="line-under-strike-decoration">Planning</span></li>
+                            </ul>
+                        </div>
+                        <div class="nav-container__items-company nav-container__items-item">
+                            <p class="nav-container__items-label"><span class="line-under-strike-decoration">Company</span> <img class="nav-container__items-label-arrow" src="images/icon-arrow-down.svg"/></p>
+                            <ul class="nav-container__items-list nav-dropdown">
+                                <li class="nav-container__items-list__item"><span class="line-under-strike-decoration">History</span></li>
+                                <li class="nav-container__items-list__item"><span class="line-under-strike-decoration">Our Team</span></li>
+                                <li class="nav-container__items-list__item"><span class="line-under-strike-decoration">Blog</span></li>
+                            </ul>
+                        </div>
+                        <div class="nav-container__items-item"><span class="line-under-strike-decoration">Careers</span></div>
+                        <div class="nav-container__items-item"><span class="line-under-strike-decoration">About</span></div>
                     </div>
-                    <div class="nav-container__items-company nav-dropdown">
-                        <p class="nav-container__items-label">Company</p>
-                        <ul class="nav-container__items-list">
-                            <li class="nav-container__items-list__item">History</li>
-                            <li class="nav-container__items-list__item">Our Team</li>
-                            <li class="nav-container__items-list__item">Blog</li>
-                        </ul>
+                    <div class="nav-container__items-buttons">
+                        <div class="nav-container__items-button-container"><button class="nav-container__items-button">Login</button></div>
+                        <div class="nav-container__items-button-container"><button class="nav-container__items-button nav-container__items-button-register">Register</button></div> 
                     </div>
                 </div>
-                <div class="nav-container__burger"><div class="burger-line"><div></div>
+                <div class="nav-container__menu"><img class="nav-container__menu-icon" src="images/icon-menu.svg"></div>
             </div>
         </div>
-        <div class="content-container">
+        <div class="content-container container">
             <div class="content-container__banner">
-                <img src="images/image-hero-mobile.png">                
+                <img class="content-container__banner-image" src="images/image-hero-mobile.png">                
             </div>
             <div class="content-container__text">
                 <h1 class="content-container__text-header">Make remote work</h1>
@@ -47,13 +57,21 @@
                 <button class="content-container__text-button">Learn more</button>
             </div>
             <div class="content-container__clients">
-                <img src="images/client-databiz.svg" alt="databiz" class="content-container__clients-logo">
-                <img src="images/client-audiophile.svg" alt="audiophile" class="content-container__clients-logo">
-                <img src="images/client-meet.svg" alt="meet" class="content-container__clients-logo">
-                <img src="images/client-maker.svg" alt="maker" class="content-container__clients-logo">
+                <div class="content-container__clients-container">
+                    <img src="images/client-databiz.svg" alt="databiz" class="content-container__clients-logo">
+                </div>
+                <div class="content-container__clients-container">
+                    <img src="images/client-audiophile.svg" alt="audiophile" class="content-container__clients-logo">
+                </div>
+                <div class="content-container__clients-container">
+                    <img src="images/client-meet.svg" alt="meet" class="content-container__clients-logo">
+                </div>
+                <div class="content-container__clients-container">
+                    <img src="images/client-maker.svg" alt="maker" class="content-container__clients-logo">
+                </div>
             </div>
         </div>
-    </div>  
+    </div> 
     <script src="js/index.js"></script>
 </body>
 </html>
