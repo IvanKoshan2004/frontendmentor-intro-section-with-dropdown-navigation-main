@@ -1,6 +1,6 @@
 (function(){
-    let openMenuButtonElement = document.querySelector(".nav-container__menu");
-    let closeMenuButtonElement = document.querySelector(".nav-container__items-exit");
+    let openMenuButtonElement = document.querySelector(".nav-container__menu-icon");
+    let closeMenuButtonElement = document.querySelector(".nav-container__exit-icon");
     let menuElement = document.querySelector(".nav-container__items-container");
     let menuViewBlockerElement = document.querySelector(".menu-view-blocker");
     let navBarExpandElements = document.querySelectorAll(".nav-container__items-label");
@@ -11,6 +11,8 @@
     navBarExpandElements.forEach(element => {
         element.addEventListener("click", activateNavBarLinks);
     });
+
+    window.addEventListener("resize", windowResizeEvent);
 
     
     //debug
@@ -52,5 +54,13 @@
             arrow.classList.add("active");
         }
     }   
+    function windowResizeEvent(event){
+        if (window.innerWidth > 768) {
+            let menuActive = menuElement.classList.contains("active");
+            if (menuActive) {
+                closeMenu();
+            }
+        }
+    }
 })();
 
