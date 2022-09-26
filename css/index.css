@@ -170,7 +170,8 @@ body {
         justify-content: space-between;
         position: relative;
         overflow: visible;
-        padding: 0 25px;
+        padding: 0;
+        padding-left: 25px;
         height: 100%;
         visibility: visible;
         flex-grow: 1;
@@ -198,8 +199,8 @@ body {
     }
     .nav-dropdown.active {
         background-color: var(--almost-white);
-        border-radius: 20px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
         height: fit-content;        
     }
     .nav-container__items-features {
@@ -258,8 +259,11 @@ body {
 .content-container {
     padding-bottom: 100px;
 }
-.content-container__banner-image {
+.content-container__banner {
     width: 100%;
+    padding-top: 75.2% ;
+    background-image: url("../images/image-hero-mobile.png");
+    background-size: cover;
 }
 
 .content-container__text {
@@ -281,13 +285,20 @@ body {
 
 .content-container__text-button {
     background-color: var(--almost-black);
-    border: none;
+    border: 1px solid var(--almost-black);
     border-radius: 15px;
     color: var(--almost-white);
     font-size: 17px;
     font-weight: 700;
     padding: 0.8em 1.3em;
+    cursor: pointer;
+    transition: all 0.2s;
 }
+.content-container__text-button:hover {
+    background-color: var(--almost-white);
+    color: var(--almost-black);
+    font-weight: 700;
+} 
 .content-container__clients {
     width: 100%;
     display: grid;
@@ -297,6 +308,54 @@ body {
 }
 .content-container__clients-logo {
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .content-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 50px 125px 100px 125px;
+        height: 875px;
+    
+    }   
+    .content-container__banner {  
+        padding-top: 0;
+        height: 100%;
+        width: auto;
+        background-image: url("../images/image-hero-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .content-container__banner-container {  
+        flex-grow: 1;
+        padding-left: 12%;
+    }
+    .content-container__text-and-clients {
+        max-width: 42%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .content-container__text {
+        text-align: left;
+        padding: 15% 0;
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .content-container__text-paragraph {
+        font-size: 18px;
+    }
+    .content-container__text-button {
+        width: fit-content;
+        padding: 0.8em 1.8em;
+    }
+    .content-container__text-header {
+        font-size: 76px;
+    }
 }
 
 
